@@ -16,11 +16,11 @@
         document.getElementById('status').innerHTML = 'successful';
 
         // Uncomment the following code block to unregister the service worker
-        /*setTimeout(function() {
+        setTimeout(function() {
           serviceWorker.unregister().then(function() {
             document.getElementById('status').innerHTML = 'unregistered';
           }, 3000);
-        });*/
+        });
       }).catch(function(error) {
         document.getElementById('status').innerHTML = error;
       });
